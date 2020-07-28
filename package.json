@@ -6,9 +6,22 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "firebase": "^7.15.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-elastic-carousel": "^0.6.7",
+    "react-glider": "^2.0.1",
+    "react-glider-carousel": "^0.1.2",
+    "react-infinite-scroll-component": "^5.0.5",
+    "react-items-carousel": "^2.8.0",
+    "react-redux": "^7.2.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "reactfire": "^2.0.3",
+    "redux": "^4.0.5",
+    "styled-components": "^5.1.1",
+    "uuid": "^8.2.0"
   },
   "scripts": {
     "start": "react-scripts start",

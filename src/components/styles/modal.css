@@ -1,0 +1,88 @@
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+progress{
+    width: 100%;
+    position: relative;
+    top: -32.6%;
+    border: none;
+    background: rgba(0, 0, 0, 0.55);
+}
+.showModal{
+    display: flex;
+}
+
+.subModal{
+    width: 399px;
+    height: 223px;
+    background-color: white;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.title{
+    display: flex;
+    height: 78px;
+    border-bottom: 1px solid #DBDBDB;
+    justify-content: center;
+    align-items: center;
+    color: #262626;
+    
+}
+
+.upload{
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    color: #0095F6;
+    font-size: 14px;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+   
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+
+.cancel{
+    display: flex;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    color: #ED4956;
+    
+}
+
+@media(max-width: 736px){
+    .subModal{
+        width: 40%;
+    }
+
+
+    .title{
+        font-size: 80%;
+    }
+
+}

@@ -1,0 +1,195 @@
+
+
+.principal-inicio{
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #FAFAFA;
+   
+                         
+ }
+
+.post{
+    position: relative;
+    width: 615px ;
+    height: 890px;
+    border: 1px solid #DBDBDB;
+    margin-bottom: 5%;
+    background-color: #FFFFFF;
+
+    
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    flex-wrap: wrap;
+
+    height: 61px;
+    border-bottom: 1px solid #DBDBDB;
+
+}
+
+.header .author-img img{
+    width: 31px;
+    height: 31px;
+    border-radius: 100%;
+    border: solid 2px red;
+    
+    
+}
+.author-img{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.header .author-title {
+    
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.img-principal{
+    height: 607px;
+    width: 100%;
+}
+
+.img-principal img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.footer .btns i{
+    font-size: 25px;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+}
+
+.liked{
+    color: red;
+}
+.btns{
+    width: 95%;
+}
+
+.comments{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    overflow: hidden;
+    width: 95%;
+    margin-left: 3%;
+    background-color: #FFFFFF;
+
+
+}
+
+.view-more{
+    position: relative;
+    align-self: center;
+    top: -25%;
+    text-decoration: none;
+    color: #989898;
+}
+
+p strong{
+    margin-right: 2% ;
+}
+
+.form{
+    height: 56px;
+    width: 100%;
+}
+
+#box-comment{
+    width: 100%;
+    height: 56px;
+    border: 1px solid #EFEFEF;
+    padding-left: 3%;
+    background-color: #FFFFFF;
+    
+
+}
+.comment-author{
+    text-decoration: none;
+    font-weight: bolder;
+    margin-right: 1%;
+}
+
+/*btn disabled*/
+button:disabled{
+    position: relative;
+    left: 90%;
+    top: -45px;
+    width:33px;
+    height: 15px;
+    background: none;
+    border: none;
+    color: #B3DFFC;
+    font-weight: bolder;
+    outline: none;
+    
+
+
+}
+
+/*btn active*/
+.add-post{
+    position: relative;
+    left: 90%;
+    top: -45px;
+    width:33px;
+    height: 15px;
+    background: none;
+    border: none;
+    color: #3EAFF8;
+    font-weight: bolder;
+    outline: none;
+    
+
+}
+
+/*RESPONSIVE*/
+@media(max-width: 630px){
+    .post{
+        width: 100%;
+        height: 80%;
+        margin-bottom: 60%;
+        border: none;
+        background-color: #FAFAFA;
+
+    }
+    .header{
+        background-color: #FAFAFA;
+
+        
+
+    }
+    .img-principal{
+        height: auto;
+        width: 100%;
+    }
+    
+    .img-principal img{
+        width: 100%;
+        height: auto;
+    }
+
+    .comments{
+        background-color: #FAFAFA;
+    }
+    #box-comment{
+        background-color: #FAFAFA;
+
+    }
+}

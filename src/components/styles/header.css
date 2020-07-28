@@ -1,0 +1,243 @@
+.back-header{
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DBDBDB;
+    position: fixed;
+    top: auto;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+}
+header{
+    grid-area: header;
+    justify-self: center;
+    width: 75%;
+    z-index: 2;
+    height: 59px;
+    
+
+    top: auto;
+
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;   
+    justify-content: space-between;
+    grid-gap: 20%;
+    grid-template-areas: "logo busqueda botones" ;
+}
+
+header .contenedor-logo{
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    color: red;
+    font-family: 'Lobster', cursive;
+
+
+}
+
+header .contenedor-logo a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    position: fixed;
+
+}
+
+
+header .barra-busqueda{
+    grid-area: busqueda;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    text-align: center;
+    
+
+}
+
+header .barra-busqueda input{
+    width: 214px;
+    height: 29px;
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    position: fixed;
+
+}
+header .btns-header{
+    grid-area: botones;
+    display: flex;
+    margin-bottom: 15px;
+    align-self: center;
+    justify-self: center;
+    
+    
+   
+    
+}
+
+header .btns-header button{
+    background: none;
+    border: none;
+    justify-self: flex-end;
+    width: 50px;
+    font-size: 24px;
+    outline: none;
+}
+.link{
+    background: none;
+    border: none;
+    justify-self: flex-end;
+    width: 50px;
+    font-size: 24px;
+}
+.i-header{
+    position: fixed;
+    color: black;
+
+}
+header .btns-header img{
+    width: 26px;
+    height: 26px;
+    border-radius: 100%;
+    position: fixed;
+
+}
+.imagen{
+    width: 100%;
+}
+
+@media(max-width: 1016px){
+    header .btns-header button{
+        background: none;
+        border: none;
+        justify-self: flex-start;
+        width: 35px;
+        font-size: 15px;
+    
+    }
+    .i-header{
+        margin-left: 80px;
+    }
+    header .btns-header img{
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        position: fixed;
+        margin-left: 80px;
+
+    
+    }
+    header .contenedor-logo a{
+        font-size: 20px;
+    }
+
+
+
+
+
+}
+
+@media(max-width: 735px){
+    .header{
+        width: 100%;
+    }
+    header .barra-busqueda input{
+        min-width: 187px;
+        height: 23px;
+        background-color: #FAFAFA;
+        border: 1px solid #DBDBDB;
+        border-radius: 3px;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        position: fixed;
+    
+    }
+    header .btns-header button{
+        background: none;
+        border: none;
+        justify-self: flex-start;
+        width: 35px;
+        font-size: 15px;
+    
+    }
+    .i-header{
+        margin-left: 80px;
+    }
+    header .btns-header img{
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        position: fixed;
+        margin-left: 75px;
+
+    
+    }
+    header .contenedor-logo a{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 572px){
+    header .barra-busqueda input{
+        width: 5%;
+        left: 30%;
+        height: 23px;
+       
+    
+    }
+    header .btns-header button{
+        background: none;
+        border: none;
+        justify-self: flex-start;
+        width: 25px;
+        font-size: 15px;
+    
+    }
+    header .btns-header img{
+        margin-left: 10%;
+
+    }
+    .i-header{
+        margin-left: 10%;
+    }
+    
+    header .contenedor-logo a{
+        font-size: 15px;
+        margin-left: -5%;
+    }
+
+}
+
+@media(max-width: 451px){
+    header{
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+    header .barra-busqueda{
+       display: none;
+        
+    
+    }
+    
+    .menu-img{
+        display: none;
+    }
+    header .btns-header button{
+    
+        font-size: 20px;
+        
+    
+    }
+    header .contenedor-logo a{
+        font-size: 20px;
+        margin-left: -10%;
+        
+
+    }
+}

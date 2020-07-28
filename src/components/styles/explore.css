@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #FAFAFA;
+
+}
+
+.principal{
+    display: grid;  
+    align-self: center;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-color: #FAFAFA;
+    
+    grid-template-rows: 60px auto;
+    grid-template-areas: "header  header "
+                         "discover discover"
+                         "explore explore"
+ }
+
+.explore{
+    grid-area: explore;
+    margin-top: 10%;
+    width: 100%;
+    
+    justify-self: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAFAFA;
+
+    
+}
+
+
+
+
+
+.list-post{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 290px)) ;
+    grid-gap: 30px;
+    justify-content: center;
+}
+
+
+/*----------------RESPONSIVE-------------------------*/
+
+/*@media screen and (max-width: 760px){
+    .list-post{
+        grid-gap: 3px;
+    }
+}*/
+
+
+
+
+@media(max-width: 747px){
+    .explore{
+        width: 100%;
+        margin:0 ;
+    }
+    .list-post{
+        grid-gap: 5px;
+    }
+
+}
+

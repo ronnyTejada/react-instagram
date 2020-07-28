@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box;
+}
+body{
+    background-color: #FAFAFA;
+
+}
+a{
+    color: black;
+}
+
+.principal-p{
+    display: grid;  
+   
+    width: 100%;
+    height: 100vh;
+    background-color: #FAFAFA;
+    grid-template-columns: minmax(90px,90px) auto;
+    grid-template-rows: 60px auto;
+    grid-template-areas: "header  header "
+                         "profile profile"
+                         "explore explore"
+ }
+
+ /*--------------------header-----------------------*/
+
+
+/*--------------------------PROFILE----------------------*/
+.profile{
+    grid-area: profile;
+    display: flex;
+    width: 80%;
+    height: 153px;
+    justify-self: center;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.imagen-profile{
+    width: 149px;
+    height: 149px;
+    border-radius: 100%;
+    position: relative;
+    left:  133px; 
+}
+
+
+
+
+.info-profile{
+    position: relative;
+    left: 215px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.username{
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.btn-profile{
+    margin-right: 20px;
+    width: 110px;
+    height: 30px;
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    border-radius: 5px;
+    color: black;
+    
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.profile-icon{
+    
+    margin-top: 5px;
+}
+
+.profile-list{
+    position: absolute;
+    display: flex;
+    left: 37%;
+    flex-direction: row;
+    align-self: center;
+    margin-top: 50px;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.profile-list li{
+    margin-right: 40px;
+}
+.profile-list li span{
+    color: #8E8E8E;
+}
+
+.list-post{
+    text-align: center;
+}
+  
+
+/*----------------RESPONSIVE-------------------------*/
+@media(max-width: 1213px){
+     .profile{
+        width: 100%;
+        
+    }
+}
+
+@media(max-width: 1016px){
+     .discover{
+        display: none;
+    }
+
+    
+
+   
+    
+}
+@media(max-width: 764px){
+    .profile-list li{
+        margin-right: 20px;
+    }
+}
+
+
+@media(max-width: 735px){
+    
+    .discover{
+        display: none;
+    }
+    
+
+    .profile{
+        display: grid;
+        grid-auto-flow: row;
+        
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "imagen info"
+                             "dashboard dashboard";
+        
+        
+    }
+    
+    .imagen-profile{
+        grid-area: imagen;
+        width: 76px;
+        height: 76px;
+        position: relative;
+        left: -50px;
+        
+
+    }
+    .info-profile{
+        grid-area: info;
+        position: relative;
+       
+        width: auto;
+        left: -50%;
+        display: grid;
+        grid-template-areas: "username icon"
+                             "btn btn";
+
+    }
+    .username{
+        grid-area: username;
+        margin-right: 0;
+    }
+    .profile-icon{
+        grid-area: icon;
+        
+    }
+    .btn-profile{
+        grid-area: btn;
+        width: 150%;
+        right: 20%;
+    }
+    .profile-list{
+        grid-area: dashboard;
+        display: flex;
+        border-top: 1px solid #DBDBDB;
+
+        align-content: center;
+        align-self: center;
+        justify-self: center;
+        height: 62px;
+        width: 100%;
+        justify-content: center;
+        position: relative;
+        left: 10px;
+        line-height: 15px;
+       
+        
+    } 
+    #post{
+        position: relative;
+        right: 20%;
+    }
+    #following{
+        position: relative;
+        left: 20%;
+    }
+    .profile-list li{
+        margin-top: 18px;
+
+    }
+    .profile-list li span {
+        position: relative;
+        top: 5px;
+
+    }
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,285 @@
+
+ .detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+    position: relative;
+    height: 600px;
+    
+
+}
+
+
+.detail .post{
+    display: flex;
+    width: 935px;
+    height: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-self: center;
+    border: 1px solid #DBDBDB;
+    position: relative;
+
+}
+
+.detail .post .div-img{
+    background-color: blue;
+    width: 65%;
+    height: 100%;
+    margin-left: 0.01%;
+}
+
+.detail .post .div-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.detail .post .info{
+    width: 35%;
+    margin-left: -0.01%;
+    background-color:#FFFFFF;
+}
+
+.detail .post .header{
+    display: flex;
+    height: 72px;
+    border-bottom: 1px solid #EFEFEF;
+    align-items: center;
+    
+}
+
+.detail .post .header img{
+    
+    width: 33px;
+    height: 33px;
+    border-radius:  100%;
+    margin-left: 8%;
+   
+}
+
+
+
+.detail .post .comments{
+    overflow: scroll;
+    height: 443px;
+    width: 97%;
+    max-height: 376px;
+
+}
+
+.detail .post .comment{
+    display: flex;
+    height: auto;
+    padding-right: 5%;
+    padding-left: -5%;
+    padding-top: 5%;
+}
+
+.detail .post .comment img{
+    width: 33px;
+    height: 33px;
+    border-radius: 100%;
+    margin-right: 5%;
+    margin-left: 6%;
+
+}
+
+.detail .post .footer .btns i{
+    font-size: 25px;
+    margin-top: 2%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+}
+.liked{
+    color: red;
+}
+.detail .post .btns{
+    width: 95%;
+}
+
+.detail .post .footer .btns{
+    height: 93px;
+}
+
+.detail .post .footer form{
+    height: 58px;
+    border-top: 1px solid #DBDBDB;
+    border-bottom: 1px solid #DBDBDB;
+
+}
+
+
+.detail .post .footer form input{
+    width: 100%;
+    height: 100%;
+    padding-left: 3%;
+    padding-right: 22%;
+    border: none;
+    outline: none;
+
+
+}
+
+/*btn disabled*/
+input:disabled{
+    position: relative;
+    left: 80%;
+    top: -38px;
+    width:40px;
+    height: 15px;
+    background: none;
+    border: none;
+    color: #B3DFFC;
+    font-weight: bolder;
+    outline: none;
+    
+
+
+}
+
+#add-post{
+    position: relative;
+    left: 80%;
+    top: -38px;
+    width:40px;
+    height: 15px;
+    background: none;
+    border: none;
+    color: #3EAFF8;
+    font-weight: bolder;
+    outline: none;
+}
+
+@media(max-width: 1000px){
+    .detail .post{
+        width: 80%;
+
+
+
+    }
+    .detail .post .info{
+        width: 43%;
+        margin-left: -0.01%;
+        background-color:#FFFFFF;
+    }
+    .detail .post .div-img{
+        background-color: blue;
+        width: 55%;
+        height: 100%;
+        margin-left: 0.01%;
+    }
+
+    .detail .post .comments{
+        overflow: scroll;
+        height: 443px;
+        width: 100%;
+        max-height: 376px;
+    
+    }
+    
+    .detail .post .comment{
+        display: flex;
+        height: auto;
+        padding-right: 5%;
+        padding-left: -5%;
+        padding-top: 5%;
+    }
+    .detail .post .footer form{
+        height: 58px;
+        width: 105%;
+        border-top: 1px solid #DBDBDB;
+        border-bottom: 1px solid #DBDBDB;
+    
+    }
+
+    
+}
+
+@media(max-width: 735px){
+    
+    .detail .post{
+        display: grid;
+        width: 80%;
+        height: 536px;
+        grid-template-areas: "header  "
+                              "photo"
+                              "footer";
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        border: none;
+    }
+    .detail .post .info .header{
+        grid-area: header;
+        display: flex;
+        height: 72px;
+        width: 250px;
+       
+        align-items: center;
+        position: relative;
+        top: 1%;
+        right: 65%;
+        
+    }
+    .detail .post .div-img{
+        grid-area: photo;
+        position: relative;
+        top: -48.5%;
+        background-color: blue;
+        width: 250px;
+        height: 308px;
+        margin-left: 0.01%;
+    }
+    
+    
+    .detail .post .info .footer {
+        grid-area: footer;
+        display: flex;
+        position: relative;
+        top: 139%;
+        width: 250px;
+        right: 65%;
+
+        
+      
+       
+    
+    }
+    .detail .post .info .footer .btns{
+        
+        width: 100%;
+    }
+   
+    .detail .post .info .footer form {
+       display: flex;
+       width: 100%;
+        border: none;
+    
+    }
+
+    .detail .post .info .footer form #box-comment{
+        display: flex;
+        width: 100%;
+        border-top: 1px solid #DBDBDB !important;
+        border: none;
+        border-radius: 0;
+     
+     }
+    
+
+
+    .detail .post .comments{
+        display: none;
+       
+    
+    }
+    
+    .detail .post .comment{
+        display: none;
+        
+    }
+
+
+}

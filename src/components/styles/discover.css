@@ -1,0 +1,71 @@
+.discover{
+   
+    margin-top: 5%;
+   
+    flex-direction: row;
+    width: 1000px;
+    
+    justify-self: center;
+    align-self: center;
+    
+    
+
+}
+
+.discover .card{
+    width: 176px;
+    height: 198px;
+    border: 1px solid #DBDBDB;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-self: center;
+    margin-right: 23px;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+
+
+.discover .card img{
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    border: 1px solid #C42ACE;
+    margin-top: 15px;
+
+    
+}
+
+.discover .card p{
+    margin-bottom: 20px;
+    
+}
+.discover-username{
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+
+.discover .card button{
+    background-color: #0095F6;
+    color: white;
+    width: 60px;
+    height: 29px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+@media(max-width: 1016px){
+
+    .discover{
+        display: none;
+    }
+}
+
+/* buttons */
+
