@@ -225,8 +225,14 @@ header .btns-header img{
     
     }
     
-    .menu-img{
-        display: none;
+    
+    header .btns-header img{
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+       
+
+    
     }
     header .btns-header button{
     
@@ -234,6 +240,7 @@ header .btns-header img{
         
     
     }
+   
     header .contenedor-logo a{
         font-size: 20px;
         margin-left: -10%;

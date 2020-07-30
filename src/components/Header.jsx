@@ -47,7 +47,7 @@ const Header=({profileImg})=>{
                     <button><i className="fas fa-location-arrow i-header" /></button>
                     <button><Link to={'/explore'}><i className="far fa-compass i-header" /></Link></button>
                     <button><i className="far fa-heart i-header" /></button>
-                    <button className="menu-img"><Link to={'/profile/'+user.username}><img src={profileImg} alt="" /></Link></button>
+                    <button className="menu-img"><Link to={'/profile/'+user.username}><img src={profileImg} alt="" className='imgHeader' /></Link></button>
                 </div>
             </header>
             <div className="back-header">

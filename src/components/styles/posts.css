@@ -23,6 +23,7 @@
     overflow: hidden;
     position: relative;
     width: auto;
+    height: auto;
 }
 
 .post-feed-img{

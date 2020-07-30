@@ -69,9 +69,9 @@ const Profile = ({ user_name }) => {
         if (user.currentUser) {
             setFollowingCount(currentUser.followingCount)
             setFollowersCount(currentUser.followersCount)
-            if(count === undefined){
+            if (count === undefined) {
                 setPostCount(currentUser.postsCount)
-            }else{
+            } else {
                 setPostCount(count)
             }
         } else if (!user.currentUser) {
@@ -216,6 +216,7 @@ const Profile = ({ user_name }) => {
 
                         </div>
                         <div className="info-profile">
+                            <div className="div1">
                             <p className="username">{user.username}</p>
                             {!user &&
                                 <>
@@ -258,13 +259,19 @@ const Profile = ({ user_name }) => {
 
 
                             }
-
+                            </div>
+                            <ul className="profile-list">
+                                <li id="post"><p><strong>{postsCount}</strong></p><span>post</span> </li>
+                                <li><p><strong>{followersCount}</strong> </p><span>followers</span></li>
+                                <li id="following"><p><strong>{followingCount}</strong> </p><span>following</span></li>
+                            </ul>
                         </div>
-                        <ul className="profile-list">   
-                            <li id="post"><p><strong>{postsCount}</strong></p><span>post</span> </li>              
-                            <li><p><strong>{followersCount}</strong> </p><span>followers</span></li>
-                            <li id="following"><p><strong>{followingCount}</strong> </p><span>following</span></li>
+                        <ul className="profile-list-movil">
+                                <li id="post"><p><strong>{postsCount}</strong></p><span>post</span> </li>
+                                <li><p><strong>{followersCount}</strong> </p><span>followers</span></li>
+                                <li id="following"><p><strong>{followingCount}</strong> </p><span>following</span></li>
                         </ul>
+
                     </div>
                     <div className="explore">
                         <div className="list-post">
